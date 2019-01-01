@@ -10,11 +10,6 @@ class Home extends Component {
             <div className="home" >
                 { Header() }
                 <Card />
-                { Input('Color') }
-                { Input('Blue') }
-                { Input('Red') }
-                { Input('Yellow') }
-                { Input('Green') }
             </div>
         );
     }
