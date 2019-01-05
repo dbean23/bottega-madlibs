@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class Content extends Component {
+    // <span>{data.indexOf(data.color)}</span>
     render() {
         const data = this.props.data;
         return (
