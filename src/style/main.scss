@@ -29,6 +29,14 @@ body {
 
 .home {
     background-color: rgba(207, 207, 207, 0.06);
+    display: grid;
+
+    justify-items: center;
+    grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e];
+}
+
+.header{
+    align-self: center;
 }
 
 .card {
@@ -47,18 +55,25 @@ body {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
 
     }
 }
 
-.inputs {
+.input {
+    display: grid;
+    //grid-template-rows: repeat(1fr);
+    grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+
+
     &__title {
-
+        grid-column: input-s/input-e;
     }   
-    input {
-
+    input { 
+        grid-column: input-s/input-e;
     }
     &__number {
-
+        grid-column: number-s/number-e;
     }
 }
