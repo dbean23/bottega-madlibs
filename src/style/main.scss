@@ -105,6 +105,8 @@ body {
 }
 
 .input {
+    font-family: 'Montserrat';
+    text-align: center;
     display: grid;
     //grid-template-rows: repeat(1fr);
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
@@ -112,11 +114,27 @@ body {
 
     &__title {
         grid-column: input-s/input-e;
+        
+        border-top: 1px solid #b3b3b3;
+        color: #b3b3b3;
+        font-size: 12px;
+        font-weight: 300px;
     }   
     input { 
+        border: none;
+        //height: 90px;
+        //width: 140px;
         grid-column: input-s/input-e;
+        text-align: center;
+        font-size: 15px;
     }
     &__number {
         grid-column: number-s/number-e;
+        background-color: #00CB79;
+        color: white;
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 2px;
+        border-radius: 50%;
     }
 }
