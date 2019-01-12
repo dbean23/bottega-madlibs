@@ -15,4 +15,10 @@ class Home extends Component {
     }
 }
 
+// things we need to fix
+// placeholder
+// gray and green number labels
+// labels in madLib Content
+// Generate btn space/ card-height
+
 export default Home;
