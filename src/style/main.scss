@@ -54,7 +54,7 @@ body {
     display: grid;
 
     justify-items: center;
-    grid-template-rows: [header-s] 218px [header-e card-s] 994px [card-e];
+    grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
 }
 
 .header{
@@ -136,16 +136,18 @@ body {
 
     button {
         justify-self: center;
-        transform: translateY(50%);
+        
     }
 
     &__generate {
         background-color: #00CB79;
         @include button;
+        transform: translateY(-300px);
     }
 
     &__clear {
         background-color: #45B0E5;
+        transform: translateY(50%);
         @include button;
     }
 
@@ -158,9 +160,23 @@ body {
         justify-self: center;
         margin-bottom: 84px;
 
+        &__label {
+            background-color: black;
+            height: 18px;
+            width: 18px;
+            line-height: 18px;
+            border-radius: 50%;
+            font-family: 'Montserrat';
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            //padding-top: 3px;
+            display: inline-block;
+            margin: 4px;
+        }
+
         p {
             padding: 50px 47px;
-            font-family: 'Montserrat';
             font-size: 16px;
             font-weight: 300;
             line-height: 29px;
@@ -216,5 +232,4 @@ body {
         border-radius: 50%;
     }
 }
-
 
