@@ -53,7 +53,7 @@ class Card extends Component {
         const inputData = [
             {title: 'Color', state: this.state.color, name: 'color'},
             {title: 'Plural Noun', state: this.state.pluralNoun, name: 'pluralNoun'},
-            {title: 'Adjective', state: this.state.adjective, name: 'adjectiveOne'},
+            {title: 'Adjective', state: this.state.adjectiveOne, name: 'adjectiveOne'},
             {title: 'Celebrity', state: this.state.celebOne, name: 'celebOne'},
             {title: 'Adjective', state: this.state.adjectiveTwo, name: 'adjectiveTwo'},
             {title: 'Noun', state: this.state.nounOne, name: 'nounOne'},

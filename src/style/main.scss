@@ -10,6 +10,14 @@
     text-align: center;
 }
 
+.gray {
+    background: #c3c3c3;
+}
+
+.green {
+    background: #00CB79;
+}
+
 
 html {
     font-size: 62.5%; // 1rem is 10px
@@ -199,7 +207,6 @@ body {
     }
     &__number {
         grid-column: number-s/number-e;
-        background-color: #00CB79;
         color: white;
         font-size: 20px;
         line-height: 24px;
